@@ -1,27 +1,86 @@
-{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>All About Me</title>
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Local css file-->
+    <link href="resource/css/body.css" rel="stylesheet" type="text/css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
 <section id="title">
-    <div>
+    <div class="container-fluid">
+
+  <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button type="button" class="navbar-brand btn btn-outline-info btn-lg" href="#" id="logo">Ray LEI</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ray LEI</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">certificate & Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Programming project</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#cta">Leisure</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+    </div>
+
+    <div class="container hero-title">
+          <div class="row">
+
+    <div class="col">
+         <h1>
+            Tireless enthusiasm for improvement and growth.
+        </h1>
+    </div>
+
+  </div>
 
 
-    <h1>
-        ALL ABOUT ME!
-    </h1>
-    <h2> Ray LEI </h2>
     </div>
 </section>
-<section id="resume">
+<section id="introduction">
     <a href="resume.html"> resume</a>
 </section>
-
-<section id="programming">
-    <a href="programming.html"> Programming</a>
-</section>
-
 <section id="certificate">
     <a href="certificate.html">certificate and course</a>
 </section>
+<section id="programming">
+    <a href="programming.html"> Programming Projects</a>
+</section>
+
+
 
 <section id="leisure">
     <a href="leisure.html"> leisure</a>
 </section>
-{% endblock %}
+<!-- Option 1: Bootstrap Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>
