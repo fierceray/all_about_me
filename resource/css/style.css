@@ -18,7 +18,18 @@ body {
 }
 
 .hero-title {
-margin-top: 50px;
+height: 230px;
 text-align: center;
+}
 
+
+.clearfix {
+  clear: both;
+  display: table;
+  padding: 5%;
+
+}
+
+h1 {
+    padding: 5%;
 }
