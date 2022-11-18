@@ -14,6 +14,13 @@ def get_leisure():
 def get_resume():
     return render_template('resume.html')
 
+@app.route('/cert')
+def get_cert():
+    return render_template('certificate.html')
+
+@app.route('/project')
+def get_project():
+    return render_template('project.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
