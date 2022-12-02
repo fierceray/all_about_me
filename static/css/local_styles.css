@@ -35,7 +35,8 @@ h1 {
 }
 
 .section-high {
-  color: aquamarine;
+  color: red; 
+  /* aquamarine */
 }
 
 .section-low {
