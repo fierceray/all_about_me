@@ -1,0 +1,43 @@
+body {
+    background-color: #E7F6F2;
+}
+
+#logo {
+  font-family: 'Ubuntu', sans-serif;
+  size: 4rem;
+  line-height: 2;
+}
+
+#title {
+    background-image: url("../img/FullSizeRender.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+      height: 300px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.hero-title {
+height: 230px;
+text-align: center;
+}
+
+
+.clearfix {
+  clear: both;
+  display: table;
+  padding: 5%;
+
+}
+
+h1 {
+    padding: 5%;
+}
+
+.section-high {
+  color: aquamarine;
+}
+
+.section-low {
+  color: black;
+}
