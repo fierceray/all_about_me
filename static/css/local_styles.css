@@ -1,5 +1,6 @@
 body {
-    background-color: #E7F6F2;
+    background-color: red; 
+    /* #E7F6F2; */
 }
 
 #logo {
@@ -35,8 +36,7 @@ h1 {
 }
 
 .section-high {
-  color: red; 
-  /* aquamarine */
+  color: aquamarine;
 }
 
 .section-low {
