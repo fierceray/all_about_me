@@ -3,74 +3,73 @@
 <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
 
     <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
                     <h1>All about Ray</h1>
                     <span class="subheading">Tireless enthusiasm for improvement and growth.</span>
                 </div>
             </div>
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col col-sm-12 col-md-6 col-lg-3">
-        
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{url_for('static', filename='img/resume-bg.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Resume</h5>
-                                <p class="card-text">Find my resume in the detail</p>
-                                <a href="{{ url_for('get_resume')}}" class="btn btn-primary">Go resume</a>
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                    <div class="col col-sm-12 col-md-6 col-lg-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{url_for('static', filename='img/certificate-bg.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">certificate and course</h5>
-                                <p class="card-text">Find my achievement in the detail.</p>
-                                <a href="{{ url_for('get_cert')}}" class="btn btn-primary">Go certificate</a>
-                            </div>
-        
-                        </div>
-                    </div>
-                    <div class="col col-sm-12 col-md-6 col-lg-3">
-        
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{url_for('static', filename='img/project-bg.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Project</h5>
-                                <p class="card-text">Find my programming project in detail.</p>
-                                <a href="{{ url_for('get_project')}}" class="btn btn-primary">Go project</a>
-                            </div>
-                        </div>
-        
-        
-                    </div>
-                    <div class="col col-sm-12 col-md-6 col-lg-3">
-        
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{url_for('static', filename='img/contact-bg.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Contact</h5>
-                                <p class="card-text">Feel free to get in touch with me.</p>
-                                <a href="{{ url_for('get_contact')}}" class="btn btn-primary">Contact me</a>
-                            </div>
-        
-                        </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='img/resume-bg.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume</h5>
+                        <p class="card-text">Find my resume in the detail</p>
+                        <a href="{{ url_for('get_resume')}}" class="btn btn-primary">Go resume</a>
                     </div>
                 </div>
+
             </div>
+
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='img/certificate-bg.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">certificate and course</h5>
+                        <p class="card-text">Find my achievement in the detail.</p>
+                        <a href="{{ url_for('get_cert')}}" class="btn btn-primary">Go certificate</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='img/project-bg.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project</h5>
+                        <p class="card-text">Find my programming project in detail.</p>
+                        <a href="{{ url_for('get_project')}}" class="btn btn-primary">Go project</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='img/contact-bg.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact</h5>
+                        <p class="card-text">Feel free to get in touch with me.</p>
+                        <a href="{{ url_for('get_contact')}}" class="btn btn-primary">Contact me</a>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </header>
 <section id="introduction">
 
     <div class="container">
- 
+
     </div>
     </div>
 </section>
