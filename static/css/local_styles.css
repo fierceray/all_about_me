@@ -30,22 +30,19 @@ text-align: center;
 
 }
 
-.card {
-  margin: 2%;
-}
 
 h2 {
     padding: 2%;
 }
 
-.section-high {
-  color: aquamarine;
-}
-
-.section-low {
-  color: black;
-}
-
 .text-responsive {
   font-size: calc(100% + 1vw + 1vh);
+}
+
+.card{
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.card-link{
+  text-decoration: underline;
 }
