@@ -3,14 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
+        - python3.9 -m pip install --upgrade pip
         - python3.9 -m pip install -r requirements.txt -t ./lib
     build:
       commands:
         - echo "Build started"
-        - python3.9 application.py
     postBuild:
       commands:
         - echo "Build completed"
+        - gunicorn wsgi:application
   artifacts:
     baseDirectory: /
     files:
