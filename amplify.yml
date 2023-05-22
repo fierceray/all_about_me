@@ -11,13 +11,16 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
-        - gunicorn wsgi:application
+        - gunicorn wsgi:application -b 0.0.0.0:8000
         - echo "run application"
   artifacts:
     baseDirectory: /
     files:
       - application.py
+      - wsgi.py
       - lib/**/*
+      - static/**/*
+      - templates/**/*
   cache:
     paths:
       - './lib/**/*'
