@@ -11,8 +11,7 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
-        - gunicorn wsgi:application -b 0.0.0.0:8000
-        - echo "run application"
+        - ./gunicorn.sh
   artifacts:
     baseDirectory: /
     files:
@@ -21,6 +20,7 @@ frontend:
       - lib/**/*
       - static/**/*
       - templates/**/*
+      - gunicorn.sh
   cache:
     paths:
       - './lib/**/*'
