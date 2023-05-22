@@ -7,6 +7,7 @@ frontend:
     build:
       commands:
         - echo "Build started"
+        - python3.9 application.py
     postBuild:
       commands:
         - echo "Build completed"
