@@ -12,6 +12,7 @@ frontend:
       commands:
         - echo "Build completed"
         - gunicorn wsgi:application
+        - echo "run application"
   artifacts:
     baseDirectory: /
     files:
