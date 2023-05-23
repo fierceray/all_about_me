@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn wsgi:application -b 0.0.0.0:8000
+./lib/gunicorn wsgi:application -b 0.0.0.0:8000
