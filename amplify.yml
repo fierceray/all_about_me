@@ -13,7 +13,7 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
-        - bash -c "gunicorn wsgi:application" &
+        - bash -c "gunicorn wsgi:application -b 0.0.0.0:80" &
         - which gunicorn
   artifacts:
     baseDirectory: /
