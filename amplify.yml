@@ -11,6 +11,7 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
+        - chmod +x gunicorn.sh
         - ./gunicorn.sh
   artifacts:
     baseDirectory: /
