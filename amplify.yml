@@ -5,6 +5,8 @@ frontend:
       commands:
         - python3.9 -m pip install --upgrade pip
         - python3.9 -m pip install -r requirements.txt -t ./lib
+        - ls ./lib
+        - ls ./lib/bin
     build:
       commands:
         - echo "Build started"
