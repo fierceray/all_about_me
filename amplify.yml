@@ -24,6 +24,7 @@ frontend:
       - static/**/*
       - templates/**/*
       - gunicorn.sh
+      - venv/**/*
   cache:
     paths:
       - './lib/**/*'
