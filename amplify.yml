@@ -7,7 +7,7 @@ frontend:
         - python3.9 -m pip install -r requirements.txt -t ./lib
         - ls ./lib/gunicorn
         - ls ./
-        - find . -name gunicorn*
+        - find . -name gunicorn
     build:
       commands:
         - echo "Build started"
