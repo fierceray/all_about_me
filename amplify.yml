@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - python3.9 -m pip install --upgrade pip
-        - python3.9 -m pip install -r requirements.txt -t ./lib
+        - python3.9 -m pip install -r requirements.txt
         - ls ./lib/gunicorn
         - ls ./
         - find . -name gunicorn
