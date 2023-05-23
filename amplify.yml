@@ -14,8 +14,7 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
-        - chmod +x gunicorn.sh
-        - ./gunicorn.sh
+        - flask --app application run
   artifacts:
     baseDirectory: /
     files:
