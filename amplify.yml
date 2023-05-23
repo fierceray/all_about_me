@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - python3.9 -m pip install -r requirements.txt
+        - python3.9 -m pip install gunicorn
         - tree ./
         - find . -name gunicorn
     build:
@@ -12,7 +13,7 @@ frontend:
     postBuild:
       commands:
         - echo "Build completed"
-        - flask --app application run
+        - bash -c "gunicorn wsgi:application" &
         - which gunicorn
   artifacts:
     baseDirectory: /
@@ -23,7 +24,6 @@ frontend:
       - static/**/*
       - templates/**/*
       - gunicorn.sh
-      - venv/**/*
   cache:
     paths:
       - './lib/**/*'
