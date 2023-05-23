@@ -15,6 +15,7 @@ frontend:
       commands:
         - echo "Build completed"
         - flask --app application run
+        - which gunicorn
   artifacts:
     baseDirectory: /
     files:
