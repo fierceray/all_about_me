@@ -16,7 +16,7 @@ frontend:
         - bash -c "gunicorn wsgi:application -b 0.0.0.0:80" &
         - which gunicorn
   artifacts:
-    baseDirectory: /
+    baseDirectory: app
     files:
       - application.py
       - wsgi.py
