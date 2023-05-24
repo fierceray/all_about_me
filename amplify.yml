@@ -15,7 +15,7 @@ frontend:
         - echo "Build completed"
         - bash -c "gunicorn wsgi:application -b 0.0.0.0:80" &
         - which gunicorn
-        - curl 127.0.0.1:80
+        - ss -tnlp
   artifacts:
     baseDirectory: /
     files:
